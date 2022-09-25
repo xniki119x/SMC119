@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: f1cont.niki119.smc119.SMC119
+

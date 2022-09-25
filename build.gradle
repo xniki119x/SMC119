@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'f1cont.niki119'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+jar{
+    manifest.mainAttributes(
+            "Main-Class":"f1cont.niki119.smc119.SMC119"
+    )
+}
