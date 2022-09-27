@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'f1cont.niki119'
-version '1.0'
+version '0.2'
 
 repositories {
     mavenCentral()

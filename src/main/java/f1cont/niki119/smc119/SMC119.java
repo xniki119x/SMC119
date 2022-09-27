@@ -1,15 +1,45 @@
 package f1cont.niki119.smc119;
 
+import f1cont.niki119.smc119.tools.Config;
+import f1cont.niki119.smc119.tools.Launcher;
+import f1cont.niki119.smc119.tools.Updater;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 
 public class SMC119 extends JFrame {
 
     public static final int VERSION = 1;
 
     public static void main(String[] args) {
-        SMC119 smc119 = new SMC119();
+
+        if(args.length>0){
+
+        }else {
+            try {
+                Config.loadConfig();
+            }catch (Exception e){
+                println("Ошибка загрузки конфига...");
+                println(e.getMessage());
+                println("Применены стандартные настройки.");
+            }
+            if(Config.version_check) {
+                try {
+                    Updater.update();
+                } catch (Exception e) {
+                    println("Не удалось проверить обновление...");
+                    println(e.getMessage());
+                    println("Запуск текущей версии.");
+                    SMC119 smc119 = new SMC119();
+                }
+            }else {
+                SMC119 smc119 = new SMC119();
+            }
+        }
+    }
+
+    public static void println(Object o){
+        System.out.println(o);
     }
 
     public static int w = 400;
