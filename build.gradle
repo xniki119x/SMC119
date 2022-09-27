@@ -9,6 +9,10 @@ repositories {
     mavenCentral()
 }
 
+compileJava{
+    options.encoding = "UTF-8"
+}
+
 jar{
     manifest.mainAttributes(
             "Main-Class":"f1cont.niki119.smc119.SMC119"

@@ -16,7 +16,7 @@ public class UpdateGui extends JFrame {
                 Toolkit.getDefaultToolkit().getScreenSize().height / 2 - h / 2,
                 w, h);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        pb_update_progress.setIndeterminate(true);
+        pb_update_progress.setMaximum(100);
         panel.add(pb_update_progress);
         add(panel);
         setVisible(true);

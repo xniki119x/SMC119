@@ -10,9 +10,10 @@ import java.awt.*;
 public class SMC119 extends JFrame {
 
     public static final int VERSION = 2;
+    public static String java_home = "java";
 
     public static void main(String[] args) {
-
+        java_home = System.getProperty("java.home")+"/bin/java";
         if(args.length>0){
 
         }else {

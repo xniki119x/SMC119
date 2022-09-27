@@ -25,6 +25,7 @@ public class Config {
         nickname = cm.get("nickname");
         version_check = Boolean.parseBoolean(cm.get("version_check"));
         java_path = cm.get("java_path");
+        br.close();
     }
 
     public static void createDefaultConfig() throws IOException {
