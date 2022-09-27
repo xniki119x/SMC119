@@ -14,7 +14,6 @@ public class Updater {
 
     public static void update() throws IOException {
         int remote_version = getRemoteVersion();
-        System.out.println(getRemoteVersion());
         if(SMC119.VERSION<remote_version){
             String jar_name = "SMC119-"+remote_version/10+"."+remote_version%10+".jar";
             URL website = new URL(URL_JAR+jar_name);
@@ -28,13 +27,10 @@ public class Updater {
 
     public static int getRemoteVersion() throws IOException{
         URL website = new URL(URL_VERSION);
-       // ReadableByteChannel rbc = Channels.newChannel(website.openStream());
         InputStream in = website.openStream();
         BufferedReader br = new BufferedReader(new InputStreamReader(in));
         int version = Integer.parseInt(br.readLine());
         return version;
-     //  FileOutputStream fos = new FileOutputStream("version");
-      //  fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
     }
 
     public static void main(String[] args) throws IOException {

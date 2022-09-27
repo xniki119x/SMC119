@@ -9,7 +9,7 @@ import java.awt.*;
 
 public class SMC119 extends JFrame {
 
-    public static final int VERSION = 1;
+    public static final int VERSION = 2;
 
     public static void main(String[] args) {
 
