@@ -6,8 +6,6 @@ import f1cont.niki119.smc119.gui.UpdateGui;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.nio.channels.Channels;
-import java.nio.channels.ReadableByteChannel;
 
 public class Updater {
 
@@ -36,7 +34,7 @@ public class Updater {
                updateGui.pb_update_progress.setValue(percentCompleted);
             }
             fos.close();
-            start(jar_name);
+            start(jar_name, SMC119.VERSION);
             updateGui.setVisible(false);
             System.exit(0);
         }else {
@@ -44,13 +42,15 @@ public class Updater {
         }
     }
 
-    public static void start(String name) throws IOException, InterruptedException {
-        String command = "\""+SMC119.java_home.replace("\\","/")+"\" -jar ./"+name;
-        //String command = "\"C:/Program Files/Java/jdk1.8.0_311/bin/java\" -jar ./"+name;
-        System.out.println(command);
+    public static void delete(String name) throws InterruptedException {
+        Thread.sleep(1000);
+        File file = new File(name);
+        if(file.exists()) file.delete();
+    }
+
+    public static void start(String name, int old_version) throws IOException {
+        String command = "\""+SMC119.java_home.replace("\\","/")+"\" -jar ./"+name+" delete "+"SMC119-"+old_version/10+"."+old_version%10+".jar";
         Process p = Runtime.getRuntime().exec(command);
-        System.setOut(new PrintStream(p.getOutputStream()));
-        System.setIn(p.getErrorStream());
     }
 
     public static int getRemoteVersion() throws IOException{

@@ -21,5 +21,7 @@ public class Launcher {
 
     public static void start(String nickname) throws IOException {
         Process process = Runtime.getRuntime().exec(command.replace("%nickname%", nickname));
+        Config.saveConfig();
+        System.exit(0);
     }
 }

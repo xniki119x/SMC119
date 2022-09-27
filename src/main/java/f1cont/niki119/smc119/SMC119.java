@@ -9,33 +9,50 @@ import java.awt.*;
 
 public class SMC119 extends JFrame {
 
-    public static final int VERSION = 2;
+    public static final int VERSION = 1;
     public static String java_home = "java";
 
     public static void main(String[] args) {
         java_home = System.getProperty("java.home")+"/bin/java";
         if(args.length>0){
-
-        }else {
-            try {
-                Config.loadConfig();
-            }catch (Exception e){
-                println("Ошибка загрузки конфига...");
-                println(e.getMessage());
-                println("Применены стандартные настройки.");
-            }
-            if(Config.version_check) {
-                try {
-                    Updater.update();
-                } catch (Exception e) {
-                    println("Не удалось проверить обновление...");
-                    println(e.getMessage());
-                    println("Запуск текущей версии.");
-                    SMC119 smc119 = new SMC119();
+            String command = args[0];
+            switch (command){
+                case "delete":{
+                    String name = args[1];
+                    try {
+                        Updater.delete(name);
+                    }catch (Exception e){
+                        println("Не удалось удалить старую версию...");
+                        println(e.getMessage());
+                    }
+                    launch();
+                    break;
                 }
-            }else {
+            }
+        }else {
+            launch();
+        }
+    }
+
+    public static void launch(){
+        try {
+            Config.loadConfig();
+        }catch (Exception e){
+            println("Ошибка загрузки конфига...");
+            println(e.getMessage());
+            println("Применены стандартные настройки.");
+        }
+        if(Config.version_check) {
+            try {
+                Updater.update();
+            } catch (Exception e) {
+                println("Не удалось проверить обновление...");
+                println(e.getMessage());
+                println("Запуск текущей версии.");
                 SMC119 smc119 = new SMC119();
             }
+        }else {
+            SMC119 smc119 = new SMC119();
         }
     }
 

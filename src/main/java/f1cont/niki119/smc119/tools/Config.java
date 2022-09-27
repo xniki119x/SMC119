@@ -28,6 +28,16 @@ public class Config {
         br.close();
     }
 
+    public static void saveConfig() throws IOException {
+        BufferedWriter bw = new BufferedWriter(new FileWriter(config));
+        config.delete();config.createNewFile();
+        bw.write("nickname="+nickname);bw.newLine();
+        bw.write("version_check="+version_check);bw.newLine();
+        bw.write("java_path="+java_path);bw.newLine();
+        bw.flush();
+        bw.close();
+    }
+
     public static void createDefaultConfig() throws IOException {
         config.createNewFile();
         BufferedWriter bw = new BufferedWriter(new FileWriter(config));
