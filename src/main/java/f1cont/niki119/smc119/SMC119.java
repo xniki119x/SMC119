@@ -1,8 +1,9 @@
 package f1cont.niki119.smc119;
 
-import f1cont.niki119.smc119.tools.Config;
+import f1cont.niki119.smc119.gui.ГлавноеОкно;
+import f1cont.niki119.smc119.tools.ОбработчикКонфига;
 import f1cont.niki119.smc119.tools.Launcher;
-import f1cont.niki119.smc119.tools.Updater;
+import f1cont.niki119.smc119.tools.ОбработчикОбновлений;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,38 +14,40 @@ public class SMC119 extends JFrame {
     public static String java_home = "java";
 
     public static void main(String[] args) {
-        java_home = System.getProperty("java.home")+"/bin/java";
-        if(args.length>0){
-            String command = args[0];
-            switch (command){
-                case "delete":{
-                    String name = args[1];
-                    try {
-                        Updater.delete(name);
-                    }catch (Exception e){
-                        println("Не удалось удалить старую версию...");
-                        println(e.getMessage());
-                    }
-                    launch();
-                    break;
-                }
-            }
-        }else {
-            launch();
-        }
+        ГлавноеОкно главноеОкно = new ГлавноеОкно();
+        главноеОкно.setVisible(true);
+        //java_home = System.getProperty("java.home")+"/bin/java";
+        //if(args.length>0){
+        //    String command = args[0];
+        //    switch (command){
+        //        case "delete":{
+        //            String name = args[1];
+        //            try {
+        //                ОбработчикОбновлений.delete(name);
+        //            }catch (Exception e){
+        //                println("Не удалось удалить старую версию...");
+        //                println(e.getMessage());
+        //            }
+        //            launch();
+        //            break;
+        //        }
+        //    }
+        //}else {
+        //    launch();
+        //}
     }
 
     public static void launch(){
         try {
-            Config.loadConfig();
+            ОбработчикКонфига.loadConfig();
         }catch (Exception e){
             println("Ошибка загрузки конфига...");
             println(e.getMessage());
             println("Применены стандартные настройки.");
         }
-        if(Config.version_check) {
+        if(ОбработчикКонфига.авто_обновление_лаунчера) {
             try {
-                Updater.update();
+                ОбработчикОбновлений.update();
             } catch (Exception e) {
                 println("Не удалось проверить обновление...");
                 println(e.getMessage());

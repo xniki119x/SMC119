@@ -1,0 +1,35 @@
+[07:19:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[07:19:00] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[07:19:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[07:19:00] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2860 for Minecraft 1.12.2 loading
+[07:19:00] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_362, running on Linux:amd64:6.1.9-arch1-2, installed at /usr/lib/jvm/java-8-openjdk/jre
+[07:19:00] [main/INFO] [FML]: Searching /home/niki119/IdeaProjects/SMC119/mods for mods
+[07:19:00] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in clientfixer-1.12.2-1.9.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[07:19:00] [main/WARN] [FML]: The coremod ClientFixer (com.gamerforea.clientfixer.loader.CoreMod) is not signed!
+[07:19:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[07:19:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[07:19:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[07:19:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[07:19:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[07:19:01] [main/FATAL] [FML]: Patcher expecting non-empty class data file for net.minecraft.entity.passive.EntityOcelot, but received empty.
+[07:19:01] [main/ERROR] [LaunchWrapper]: Unable to launch
+java.lang.RuntimeException: java.lang.RuntimeException: Patcher expecting non-empty class data file for net.minecraft.entity.passive.EntityOcelot, but received empty, your vanilla jar may be corrupt.
+	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:169) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:115) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.RuntimeException: Patcher expecting non-empty class data file for net.minecraft.entity.passive.EntityOcelot, but received empty, your vanilla jar may be corrupt.
+	at net.minecraftforge.fml.common.patcher.ClassPatchManager.applyPatch(ClassPatchManager.java:114) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	at net.minecraftforge.fml.common.patcher.ClassPatchManager.getPatchedResource(ClassPatchManager.java:77) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	at net.minecraftforge.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper.getFieldType(FMLDeobfuscatingRemapper.java:219) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	at net.minecraftforge.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper.parseField(FMLDeobfuscatingRemapper.java:192) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	at net.minecraftforge.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper.setup(FMLDeobfuscatingRemapper.java:161) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	at net.minecraftforge.fml.common.asm.FMLSanityChecker.injectData(FMLSanityChecker.java:187) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:164) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	... 2 more
+[07:19:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: net.minecraftforge.fml.relauncher.FMLSecurityManager$ExitTrappedException
+[07:19:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at net.minecraftforge.fml.relauncher.FMLSecurityManager.checkPermission(FMLSecurityManager.java:49)
+[07:19:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at java.lang.SecurityManager.checkExit(SecurityManager.java:761)
+[07:19:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at java.lang.Runtime.exit(Runtime.java:101)
+[07:19:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at java.lang.System.exit(System.java:987)
+[07:19:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:138)
+[07:19:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)

@@ -1,0 +1,8 @@
+libraries/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar
+libraries/cpw/mods/securejarhandler/2.1.4/securejarhandler-2.1.4.jar
+libraries/org/ow2/asm/asm-commons/9.3/asm-commons-9.3.jar
+libraries/org/ow2/asm/asm-util/9.3/asm-util-9.3.jar
+libraries/org/ow2/asm/asm-analysis/9.3/asm-analysis-9.3.jar
+libraries/org/ow2/asm/asm-tree/9.3/asm-tree-9.3.jar
+libraries/org/ow2/asm/asm/9.3/asm-9.3.jar
+libraries/net/minecraftforge/JarJarFileSystems/0.3.16/JarJarFileSystems-0.3.16.jar

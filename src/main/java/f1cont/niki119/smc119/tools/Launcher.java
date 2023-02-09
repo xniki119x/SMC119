@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Launcher {
 
-    public static String command = "jdk-17\\bin\\java -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 " +
+    public static String command = "java -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 " +
             "-XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M -XX:+DisableExplicitGC -XX:+AlwaysPreTouch " +
             "-XX:+ParallelRefProcEnabled -Xms2048M -Xmx4096M -Dfile.encoding=UTF-8 -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump " +
             "-Xss1M -Djava.library.path=bin\\natives -Dminecraft.launcher.brand=java-minecraft-launcher -Dminecraft.launcher.version=1.6.84-j " +
@@ -21,7 +21,7 @@ public class Launcher {
 
     public static void start(String nickname) throws IOException {
         Process process = Runtime.getRuntime().exec(command.replace("%nickname%", nickname));
-        Config.saveConfig();
+        ОбработчикКонфига.saveConfig();
         System.exit(0);
     }
 }

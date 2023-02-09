@@ -1,0 +1,124 @@
+[07:19:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[07:19:00] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[07:19:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[07:19:00] [main/DEBUG] [FML]: Injecting tracing printstreams for STDOUT/STDERR.
+[07:19:00] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2860 for Minecraft 1.12.2 loading
+[07:19:00] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_362, running on Linux:amd64:6.1.9-arch1-2, installed at /usr/lib/jvm/java-8-openjdk/jre
+[07:19:00] [main/DEBUG] [FML]: Java classpath at launch is:
+[07:19:00] [main/DEBUG] [FML]:     "libraries/com/turikhay/ca-fixer/1.0/ca-fixer-1.0.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/net/minecraftforge/forge/1.12.2-14.23.5.2860/forge-1.12.2-14.23.5.2860.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/jline/jline/3.5.1/jline-3.5.1.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/com/typesafe/akka/akka-actor_2.11/2.3.3/akka-actor_2.11-2.3.3.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/com/typesafe/config/1.2.1/config-1.2.1.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/scala-lang/scala-actors-migration_2.11/1.1.0/scala-actors-migration_2.11-1.1.0.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/scala-lang/scala-compiler/2.11.1/scala-compiler-2.11.1.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/scala-lang/plugins/scala-continuations-library_2.11/1.0.2_mc/scala-continuations-library_2.11-1.0.2_mc.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/scala-lang/plugins/scala-continuations-plugin_2.11.1/1.0.2_mc/scala-continuations-plugin_2.11.1-1.0.2_mc.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/scala-lang/scala-library/2.11.1/scala-library-2.11.1.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/scala-lang/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/scala-lang/scala-reflect/2.11.1/scala-reflect-2.11.1.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/scala-lang/scala-swing_2.11/1.0.1/scala-swing_2.11-1.0.1.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/scala-lang/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/lzma/lzma/0.0.1/lzma-0.0.1.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/java3d/vecmath/1.5.2/vecmath-1.5.2.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/apache/logging/log4j/log4j-api/2.15.0/log4j-api-2.15.0.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/apache/logging/log4j/log4j-core/2.15.0/log4j-core-2.15.0.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/ru/tlauncher/patchy/1.0.0/patchy-1.0.0.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/oshi-project/oshi-core/1.1/oshi-core-1.1.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/net/java/dev/jna/jna/4.4.0/jna-4.4.0.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/com/ibm/icu/icu4j-core-mojang/51.2/icu4j-core-mojang-51.2.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/com/paulscode/codecjorbis/20101023/codecjorbis-20101023.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/com/paulscode/codecwav/20101023/codecwav-20101023.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/com/paulscode/libraryjavasound/20101123/libraryjavasound-20101123.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/com/paulscode/librarylwjglopenal/20100824/librarylwjglopenal-20100824.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/com/paulscode/soundsystem/20120107/soundsystem-20120107.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/com/google/guava/guava/21.0/guava-21.0.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/commons-io/commons-io/2.5/commons-io-2.5.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/commons-codec/commons-codec/1.10/commons-codec-1.10.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/by/ely/authlib/3.2.38.0-cafixer/authlib-3.2.38.0-cafixer.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/com/mojang/realms/1.10.22/realms-1.10.22.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/it/unimi/dsi/fastutil/7.1.0/fastutil-7.1.0.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/apache/logging/log4j/log4j-api/2.8.1/log4j-api-2.8.1.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/apache/logging/log4j/log4j-core/2.8.1/log4j-core-2.8.1.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/lwjgl/lwjgl/lwjgl/2.9.4-nightly-20150209/lwjgl-2.9.4-nightly-20150209.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/org/lwjgl/lwjgl/lwjgl_util/2.9.4-nightly-20150209/lwjgl_util-2.9.4-nightly-20150209.jar
+[07:19:00] [main/DEBUG] [FML]:     libraries/com/mojang/text2speech/1.10.3/text2speech-1.10.3.jar
+[07:19:00] [main/DEBUG] [FML]:     bin/minecraft.jar"
+[07:19:00] [main/DEBUG] [FML]: Java library path at launch is:
+[07:19:00] [main/DEBUG] [FML]:     "bin/natives"
+[07:19:00] [main/DEBUG] [FML]: Determined Minecraft Libraries Root: /home/niki119/IdeaProjects/SMC119/libraries
+[07:19:00] [main/DEBUG] [FML]: Cleaning up mods folder: /home/niki119/IdeaProjects/SMC119/mods
+[07:19:00] [main/DEBUG] [FML]: Examining file: clientfixer-1.12.2-1.9.jar
+[07:19:00] [main/DEBUG] [FML]: Enabling runtime deobfuscation
+[07:19:00] [main/DEBUG] [FML]: Instantiating coremod class FMLCorePlugin
+[07:19:00] [main/DEBUG] [FML]: Found signing certificates for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin)
+[07:19:00] [main/DEBUG] [FML]: Found certificate e3c3d50c7c986df74c645c0ac54639741c90a557
+[07:19:00] [main/DEBUG] [FML]: Added access transformer class net.minecraftforge.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
+[07:19:00] [main/DEBUG] [FML]: Enqueued coremod FMLCorePlugin
+[07:19:00] [main/DEBUG] [FML]: Instantiating coremod class FMLForgePlugin
+[07:19:00] [main/DEBUG] [FML]: Found signing certificates for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin)
+[07:19:00] [main/DEBUG] [FML]: Found certificate e3c3d50c7c986df74c645c0ac54639741c90a557
+[07:19:00] [main/DEBUG] [FML]: Enqueued coremod FMLForgePlugin
+[07:19:00] [main/DEBUG] [FML]: All fundamental core mods are successfully located
+[07:19:00] [main/DEBUG] [FML]: Discovering coremods
+[07:19:00] [main/INFO] [FML]: Searching /home/niki119/IdeaProjects/SMC119/mods for mods
+[07:19:00] [main/DEBUG] [FML]:   Adding clientfixer-1.12.2-1.9.jar to the mod list
+[07:19:00] [main/DEBUG] [FML]: Examining for coremod candidacy clientfixer-1.12.2-1.9.jar
+[07:19:00] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in clientfixer-1.12.2-1.9.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[07:19:00] [main/DEBUG] [FML]: Instantiating coremod class CoreMod
+[07:19:00] [main/TRACE] [FML]: coremod named ClientFixer is loading
+[07:19:00] [main/DEBUG] [FML]: The coremod com.gamerforea.clientfixer.loader.CoreMod requested minecraft version 1.12.2 and minecraft is 1.12.2. It will be loaded.
+[07:19:00] [main/WARN] [FML]: The coremod ClientFixer (com.gamerforea.clientfixer.loader.CoreMod) is not signed!
+[07:19:00] [main/DEBUG] [FML]: Enqueued coremod ClientFixer
+[07:19:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[07:19:00] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[07:19:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[07:19:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[07:19:00] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[07:19:00] [main/DEBUG] [FML]: Injecting coremod FMLCorePlugin \{net.minecraftforge.fml.relauncher.FMLCorePlugin\} class transformers
+[07:19:00] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer
+[07:19:00] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriptionTransformer
+[07:19:00] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriberTransformer
+[07:19:00] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.SoundEngineFixTransformer
+[07:19:00] [main/DEBUG] [FML]: Injection complete
+[07:19:00] [main/DEBUG] [FML]: Running coremod plugin for FMLCorePlugin \{net.minecraftforge.fml.relauncher.FMLCorePlugin\}
+[07:19:00] [main/DEBUG] [FML]: Running coremod plugin FMLCorePlugin
+[07:19:01] [main/DEBUG] [FML]: Read 1154 binary patches
+[07:19:01] [main/DEBUG] [FML]: Loading deobfuscation resource /deobfuscation_data-1.12.2.lzma with 36076 records
+[07:19:01] [main/FATAL] [FML]: Patcher expecting non-empty class data file for net.minecraft.entity.passive.EntityOcelot, but received empty.
+[07:19:01] [main/ERROR] [LaunchWrapper]: Unable to launch
+java.lang.RuntimeException: java.lang.RuntimeException: Patcher expecting non-empty class data file for net.minecraft.entity.passive.EntityOcelot, but received empty, your vanilla jar may be corrupt.
+	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:169) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:115) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+Caused by: java.lang.RuntimeException: Patcher expecting non-empty class data file for net.minecraft.entity.passive.EntityOcelot, but received empty, your vanilla jar may be corrupt.
+	at net.minecraftforge.fml.common.patcher.ClassPatchManager.applyPatch(ClassPatchManager.java:114) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	at net.minecraftforge.fml.common.patcher.ClassPatchManager.getPatchedResource(ClassPatchManager.java:77) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	at net.minecraftforge.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper.getFieldType(FMLDeobfuscatingRemapper.java:219) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	at net.minecraftforge.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper.parseField(FMLDeobfuscatingRemapper.java:192) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	at net.minecraftforge.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper.setup(FMLDeobfuscatingRemapper.java:161) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	at net.minecraftforge.fml.common.asm.FMLSanityChecker.injectData(FMLSanityChecker.java:187) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	at net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper.injectIntoClassLoader(CoreModManager.java:164) ~[forge-1.12.2-14.23.5.2860.jar:?]
+	... 2 more
+[07:19:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: net.minecraftforge.fml.relauncher.FMLSecurityManager$ExitTrappedException
+[07:19:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at net.minecraftforge.fml.relauncher.FMLSecurityManager.checkPermission(FMLSecurityManager.java:49)
+[07:19:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at java.lang.SecurityManager.checkExit(SecurityManager.java:761)
+[07:19:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at java.lang.Runtime.exit(Runtime.java:101)
+[07:19:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at java.lang.System.exit(System.java:987)
+[07:19:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:138)
+[07:19:01] [main/INFO] [STDERR]: [java.lang.ThreadGroup:uncaughtException:1052]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
